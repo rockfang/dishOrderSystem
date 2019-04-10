@@ -15,14 +15,18 @@
             let menuIcon = document.getElementById("menu-icon");
             menuIcon.style.transform = 'translate(-6rem,0)';
 
+            let blurBg = document.getElementById("blur-bg");
 
-            menuIcon.onclick = function () {
+            blurBg.onclick = menuIcon.onclick = function () {
                 if (defaultFlag) {
                     navList.style.transform = 'translate(0,0)';
                     menuIcon.style.transform = 'translate(0,0)';
+                    blurBg.style.display = "block";
+
                 } else {
                     navList.style.transform = 'translate(-100%,0)';
                     menuIcon.style.transform = 'translate(-6rem,0)';
+                    blurBg.style.display = "none";
                 }
                 defaultFlag = !defaultFlag;
             }
@@ -216,10 +220,19 @@
         <li>店长推荐</li>
     </ul>
     <div class="menu" id="menu-icon">
-        <img src="img/nav.png" alt="菜单图标记">
-        <p>菜单</p>
+    <img src="img/nav.png" alt="菜单图标记">
+    <p>菜单</p>
     </div>
+    <div class="blur-bg" id="blur-bg"></div>
 
-    <div class="blur-bg"></div>
+
+    <div class="nav-btn">
+        <img src="img/navigation.png" alt="导航图标">
+        <p>导航</p>
+    </div>
+    <div class="cart-btn">
+        <img src="img/cart.png" alt="购物车图标">
+        <p>已点</p>
+    </div>
 </body>
 </html>

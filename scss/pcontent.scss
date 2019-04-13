@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 .pcontent {
   .info {
     background-color: white;
@@ -34,7 +34,9 @@
     }
   }
 }
-
+/**
+  底部添加购物车栏
+ */
 .pfooter {
   position: fixed;
   left: 0;
@@ -91,5 +93,32 @@
     background-color: red;
     border: none;
     border-radius: .5rem;
+  }
+}
+//顶部返回按钮
+.pheader-back {
+  position: fixed;
+  left: .5rem;
+  top: .5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 4.5rem;
+  //css3 before伪类
+  &:before {
+    content: "";
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    float: left;
+    border-bottom: .2rem solid white;
+    border-left: .2rem solid white;
+    position: relative;
+    top: 1.8rem;
+    left: 1rem;
+    transform: rotate(45deg);
   }
 }

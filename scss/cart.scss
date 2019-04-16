@@ -1,3 +1,4 @@
+@charset "utf-8";
 .cart-content {
   padding: 1rem;
   .cart-info {
@@ -158,5 +159,28 @@
   p {
     color: white;
     margin-top: -.2rem;
+  }
+}
+.customs-favors {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 1rem 6rem 1rem;
+
+  .horizontal-list {
+    width: 100%;
+    overflow-x: auto;
+
+    ul {
+      display: flex;
+      .item {
+        margin: 0 .25rem;
+          img {
+            border-radius: .5rem;
+            width: 6rem;
+            height: 6rem;
+          }
+      }
+    }
   }
 }

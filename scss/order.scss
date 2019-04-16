@@ -1,0 +1,47 @@
+
+.order-info {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin: 1rem;
+  .order-info-top {
+    display: flex;
+    img {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+    div {
+      flex: 1;
+      padding-top: .5rem;
+    }
+  }
+  .order-info-bottom {
+    padding-bottom: .5rem;
+    line-height: 2rem;
+    span {
+      font-size: 2rem;
+      color: red;
+    }
+  }
+}
+.order-detail {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  li {
+    display: flex;
+    margin-top: 1rem;
+    .product-name {
+      flex: 2;
+    }
+    .product-amount {
+      flex: 1;
+      text-align: center;
+    }
+    .product-money {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
